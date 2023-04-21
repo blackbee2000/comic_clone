@@ -1,4 +1,3 @@
-import 'package:comic_clone/controllers/chapters_controller.dart';
 import 'package:comic_clone/controllers/comic_read_controller.dart';
 import 'package:comic_clone/routes/app_routes.dart';
 import 'package:comic_clone/utils/app_words.dart';
@@ -515,18 +514,20 @@ class _ComicReadScreenState extends State<ComicReadScreen> {
                                     const Color(0xffffffff);
                                 comicReadController.update();
                               },
-                              child: Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  border: Border.all(
-                                      color: comicReadController
-                                                  .backgroundColor.value ==
-                                              const Color(0xffffffff)
-                                          ? Colors.black
-                                          : Colors.transparent),
-                                  shape: BoxShape.circle,
+                              child: Obx(
+                                () => Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(
+                                        color: comicReadController
+                                                    .backgroundColor.value ==
+                                                const Color(0xffffffff)
+                                            ? Colors.black
+                                            : Colors.transparent),
+                                    shape: BoxShape.circle,
+                                  ),
                                 ),
                               ),
                             ),
@@ -537,20 +538,22 @@ class _ComicReadScreenState extends State<ComicReadScreen> {
                                     const Color.fromARGB(255, 156, 150, 105);
                                 comicReadController.update();
                               },
-                              child: Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  color:
-                                      const Color.fromARGB(255, 156, 150, 105),
-                                  border: Border.all(
-                                      color: comicReadController
-                                                  .backgroundColor.value ==
-                                              const Color.fromARGB(
-                                                  255, 156, 150, 105)
-                                          ? Colors.brown
-                                          : Colors.transparent),
-                                  shape: BoxShape.circle,
+                              child: Obx(
+                                () => Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(
+                                        255, 156, 150, 105),
+                                    border: Border.all(
+                                        color: comicReadController
+                                                    .backgroundColor.value ==
+                                                const Color.fromARGB(
+                                                    255, 156, 150, 105)
+                                            ? Colors.brown
+                                            : Colors.transparent),
+                                    shape: BoxShape.circle,
+                                  ),
                                 ),
                               ),
                             ),
@@ -561,20 +564,23 @@ class _ComicReadScreenState extends State<ComicReadScreen> {
                                     const Color.fromARGB(255, 35, 35, 35);
                                 comicReadController.update();
                               },
-                              child: Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 35, 35, 35),
-                                  border: Border.all(
-                                    color: comicReadController
-                                                .backgroundColor.value ==
-                                            const Color.fromARGB(
-                                                255, 35, 35, 35)
-                                        ? Colors.white
-                                        : Colors.transparent,
+                              child: Obx(
+                                () => Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color:
+                                        const Color.fromARGB(255, 35, 35, 35),
+                                    border: Border.all(
+                                      color: comicReadController
+                                                  .backgroundColor.value ==
+                                              const Color.fromARGB(
+                                                  255, 35, 35, 35)
+                                          ? Colors.red
+                                          : Colors.transparent,
+                                    ),
+                                    shape: BoxShape.circle,
                                   ),
-                                  shape: BoxShape.circle,
                                 ),
                               ),
                             ),
@@ -585,18 +591,20 @@ class _ComicReadScreenState extends State<ComicReadScreen> {
                                     const Color(0xff000000);
                                 comicReadController.update();
                               },
-                              child: Container(
-                                width: 30,
-                                height: 30,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  border: Border.all(
-                                      color: comicReadController
-                                                  .backgroundColor.value ==
-                                              const Color(0xff000000)
-                                          ? Colors.white
-                                          : Colors.transparent),
-                                  shape: BoxShape.circle,
+                              child: Obx(
+                                () => Container(
+                                  width: 30,
+                                  height: 30,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    border: Border.all(
+                                        color: comicReadController
+                                                    .backgroundColor.value ==
+                                                const Color(0xff000000)
+                                            ? Colors.red
+                                            : Colors.transparent),
+                                    shape: BoxShape.circle,
+                                  ),
                                 ),
                               ),
                             ),
